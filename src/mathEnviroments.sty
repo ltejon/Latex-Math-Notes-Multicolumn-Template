@@ -1,0 +1,65 @@
+\usepackage{package}
+
+\newcounter{contador}
+\newtheorem{prop}{Proposition}[contador]
+\setcounter{contador}{0}
+
+\newtheoremstyle{defi}  % Nombre del estilo
+  {3pt}                       % Espacio arriba
+  {3pt}                       % Espacio abajo
+  {\normalfont}               % Cuerpo de la definición
+  {}                          % Sangría
+  {\color{verdee}\bfseries}     % Estilo del encabezado (verde y negrita)
+  {.}                         % Puntuación tras el encabezado
+  { }                         % Espacio tras el encabezado
+  {}                          % El título del encabezado, vacío para usar                                                       
+\theoremstyle{defi}
+\newtheorem{defi}[contador]{Definici\'on}
+
+\newtheoremstyle{propo}
+{3pt}{3pt}{\normalfont}{}
+{\color{bluePropo}\bfseries}{.}{ }{}   
+\theoremstyle{propo}
+\newtheorem{propo}[prop]{Proposici\'on}
+
+\newtheoremstyle{coro}
+{3pt}{3pt}{\normalfont}{}
+{\color{blueCoro}\bfseries}{.}{ }{}   
+\theoremstyle{coro}
+\newtheorem{coro}[prop]{Corolario}
+
+\newtheoremstyle{thm}
+{3pt}{3pt}{\normalfont}{}
+{\color{blueThm}\bfseries}{.}{ }{}   
+\theoremstyle{thm}
+\newtheorem{thm}[prop]{Teorema}
+
+\newtheoremstyle{lem}
+{3pt}{3pt}{\normalfont}{}
+{\color{cadetblue}\bfseries}{.}{ }{}   
+\theoremstyle{lem}
+\newtheorem{lem}[prop]{Lema}
+
+\newtheoremstyle{obs}
+{3pt}{3pt}{\normalfont}{}
+{\color{amaObs}\bfseries}{.}{ }{}   
+\theoremstyle{obs}
+\newtheorem{obs}[prop]{Observaci\'on}
+
+\newtheoremstyle{rem}
+{3pt}{3pt}{\normalfont}{}
+{\color{dunkelmagenta}\bfseries}{.}{ }{}   
+\theoremstyle{rem}
+\newtheorem{rem}[prop]{Remark}
+
+\newtheoremstyle{datazo}
+{3pt}{3pt}{\normalfont}{}
+{\color{brightmaroon}\bfseries}{.}{ }{}   
+\theoremstyle{datazo}
+\newtheorem{datazo}[prop]{Datazo}
+
+\newtheoremstyle{hecho}
+{3pt}{3pt}{\normalfont}{}
+{\color{darkraspberry}\bfseries}{.}{ }{}   
+\theoremstyle{hecho}
+\newtheorem{hecho}[prop]{Hecho}
